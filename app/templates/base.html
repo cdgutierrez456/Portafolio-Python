@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %} {% endblock %} - Portfolio</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&family=Rufina:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <div class="logo">Cristian David Gutierrez</div>
+        <div class="logo">CRISTIAN D. GUTIERREZ</div>
         <nav>
             <ul>
                 <li><a href="{{ url_for('portfolio.index') }}">Inicio</a></li>
@@ -21,4 +26,5 @@
         {% block content %}{% endblock %}
     </section>
 </body>
+
 </html>

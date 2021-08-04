@@ -1,0 +1,53 @@
+:root {
+    --principal: #110EF1;
+    --secundario: #EEF10E;
+}
+
+body {
+    background: #efefef;
+    margin: 0;
+    padding: 0;
+    color: var(--principal);
+}
+
+a {
+    transition: color .3s ease;
+    font-family: 'Rubik', sans-serif;
+    color: var(--principal);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a:hover {
+    color: var(--secundario);
+}
+
+body header {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 3px 0 5px #aaa;
+    padding: 15px 30px;
+}
+
+header .logo {
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 16px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    padding: 0 1.2rem;
+}
+
