@@ -1,10 +1,21 @@
 {% extends 'base.html' %}
 
 {% block title %}
-    Bienvenido
+Bienvenido
 {% endblock %}
 
 {% block content %}
- Funcionando
+<div class="hero">
+    <div class="hero-content">
+        <div class="left">
+            <h1>Soy Cuasi Desarrollador</h1>
+            <h1>Cristian D. Gutierrez</h1>
+            <p>Construyo aplicaciones para la Nasa y Space X. Gracias a ellas podremos vivir en la Luna y en Marte muy pronto 😎</p>
+            <a href="#contacto" class="btn">Contáctame</a>
+        </div>
+        <div class="right">
+            <img src="{{ url_for('static', filename='img/data.png') }}" width=600px alt="Imagen de datos">
+        </div>
+    </div>
+</div>
 {% endblock %}
-
